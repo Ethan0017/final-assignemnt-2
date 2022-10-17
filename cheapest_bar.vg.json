@@ -1,0 +1,13 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 650,
+    "height": 600,
+    "title": "Annual Precipitation History",
+    "data": {"url": "https://raw.githubusercontent.com/Ethan0017/ethan-visualisation-2/main/newdata.csv"},
+    "mark": "bar",
+    "encoding": {
+      "x": {"aggregate": "sum", "field": "Precipitation", "title": "Precipitation (mm/year)"},
+      "y": {"field": "Year"},
+      "color": {"field": "Region"}
+    }
+  }

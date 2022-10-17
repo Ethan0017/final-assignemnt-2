@@ -1,0 +1,13 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 1500,
+    "height": 600,
+    "title": "Rainfall against mean temperature for global countries",
+    "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
+    "data": {"url": "https://raw.githubusercontent.com/Ethan0017/ethan-visualisation-2/main/raintemperature.csv"},
+    "mark": "point",
+    "encoding": {
+      "x": {"field": "temp", "title": "Temperature (°C)", "type": "quantitative"},
+      "y": {"field": "rain", "title": "Rainfall (mm/year)", "type": "quantitative"}
+    }
+  }

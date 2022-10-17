@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 650,
+  "height": 600,
+  "description": "A simple pie chart with embedded data.",
+  "title": { "text": "Proportion of Continent Rainfall Per Annum" },
+  "data": {
+    "values": [
+      {"category": "Antarctica", "value": 0.021317829},
+      {"category": "Australia", "value": 0.085271318},
+      {"category": "Asia", "value": 0.125968992},
+      {"category": "Africa", "value": 0.143410853},
+      {"category": "Europe", "value": 0.158914729},
+      {"category": "North America", "value": 0.15503876},
+      {"category": "South America", "value": 0.310077519}
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {"field": "value", "type": "quantitative"},
+    "color": {"field": "category", "title": "Continent",  "type": "nominal"}
+  }
+} 
